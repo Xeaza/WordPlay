@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1674B20A19DB5A8000D2DBB3 /* EnterVerbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1674B20919DB5A8000D2DBB3 /* EnterVerbViewController.m */; };
+		1674B20D19DB5B4200D2DBB3 /* EnterCurseWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1674B20C19DB5B4200D2DBB3 /* EnterCurseWordViewController.m */; };
+		1674B21019DB5BB400D2DBB3 /* EnterBodyPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1674B20F19DB5BB400D2DBB3 /* EnterBodyPartViewController.m */; };
 		34A9D72019DB3A6900208395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9D71F19DB3A6900208395 /* main.m */; };
 		34A9D72319DB3A6900208395 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9D72219DB3A6900208395 /* AppDelegate.m */; };
 		34A9D72619DB3A6900208395 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9D72519DB3A6900208395 /* ViewController.m */; };
@@ -30,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1674B20819DB5A8000D2DBB3 /* EnterVerbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterVerbViewController.h; sourceTree = "<group>"; };
+		1674B20919DB5A8000D2DBB3 /* EnterVerbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterVerbViewController.m; sourceTree = "<group>"; };
+		1674B20B19DB5B4200D2DBB3 /* EnterCurseWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterCurseWordViewController.h; sourceTree = "<group>"; };
+		1674B20C19DB5B4200D2DBB3 /* EnterCurseWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterCurseWordViewController.m; sourceTree = "<group>"; };
+		1674B20E19DB5BB400D2DBB3 /* EnterBodyPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterBodyPartViewController.h; sourceTree = "<group>"; };
+		1674B20F19DB5BB400D2DBB3 /* EnterBodyPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterBodyPartViewController.m; sourceTree = "<group>"; };
 		34A9D71A19DB3A6900208395 /* WordPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A9D71E19DB3A6900208395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A9D71F19DB3A6900208395 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +104,12 @@
 				34A9D72419DB3A6900208395 /* ViewController.h */,
 				34A9D72519DB3A6900208395 /* ViewController.m */,
 				34A9D72719DB3A6900208395 /* Main.storyboard */,
+				1674B20E19DB5BB400D2DBB3 /* EnterBodyPartViewController.h */,
+				1674B20F19DB5BB400D2DBB3 /* EnterBodyPartViewController.m */,
+				1674B20819DB5A8000D2DBB3 /* EnterVerbViewController.h */,
+				1674B20919DB5A8000D2DBB3 /* EnterVerbViewController.m */,
+				1674B20B19DB5B4200D2DBB3 /* EnterCurseWordViewController.h */,
+				1674B20C19DB5B4200D2DBB3 /* EnterCurseWordViewController.m */,
 				34A9D74319DB40CC00208395 /* EnterNameViewController.h */,
 				34A9D74419DB40CC00208395 /* EnterNameViewController.m */,
 				34A9D74619DB41FA00208395 /* EnterAdjectiveViewController.h */,
@@ -235,10 +250,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A9D72619DB3A6900208395 /* ViewController.m in Sources */,
+				1674B20A19DB5A8000D2DBB3 /* EnterVerbViewController.m in Sources */,
 				34A9D72319DB3A6900208395 /* AppDelegate.m in Sources */,
 				34A9D74819DB41FA00208395 /* EnterAdjectiveViewController.m in Sources */,
+				1674B20D19DB5B4200D2DBB3 /* EnterCurseWordViewController.m in Sources */,
 				34A9D74B19DB434900208395 /* ResultsViewController.m in Sources */,
 				34A9D74519DB40CC00208395 /* EnterNameViewController.m in Sources */,
+				1674B21019DB5BB400D2DBB3 /* EnterBodyPartViewController.m in Sources */,
 				34A9D72019DB3A6900208395 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +448,7 @@
 				34A9D73F19DB3A6A00208395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34A9D74019DB3A6A00208395 /* Build configuration list for PBXNativeTarget "WordPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +457,7 @@
 				34A9D74219DB3A6A00208395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
