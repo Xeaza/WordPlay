@@ -7,7 +7,7 @@
 //
 
 #import "EnterNameViewController.h"
-#import "EnterAdjectiveViewController.h"
+#import "EnterVerbViewController.h"
 
 @interface EnterNameViewController ()
 
@@ -44,8 +44,8 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    EnterAdjectiveViewController *enterAdjectiveViewController = segue.destinationViewController;
-    enterAdjectiveViewController.name = self.nameTextField.text;
+    EnterVerbViewController *enterVerbViewController = segue.destinationViewController;
+    enterVerbViewController.name = self.nameTextField.text;
 
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

@@ -10,4 +10,7 @@
 
 @interface EnterCurseWordViewController : UIViewController
 
+@property NSString *verb;
+@property NSString *name;
+
 @end

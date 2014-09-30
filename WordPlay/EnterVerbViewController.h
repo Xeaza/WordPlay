@@ -10,4 +10,6 @@
 
 @interface EnterVerbViewController : UIViewController
 
+@property NSString *name;
+
 @end

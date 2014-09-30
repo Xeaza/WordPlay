@@ -10,4 +10,8 @@
 
 @interface EnterBodyPartViewController : UIViewController
 
+@property NSString *name;
+@property NSString *verb;
+@property NSString *curseWord;
+
 @end
