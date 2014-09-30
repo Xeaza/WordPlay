@@ -21,8 +21,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-
-    NSLog(@"Test change");
     // Dispose of any resources that can be recreated.
 }
 
