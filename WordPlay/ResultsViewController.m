@@ -18,7 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *story = [NSString stringWithFormat:@"One day, %@ was %@ into Mobile Makers when he noticed how %@ %@ his %@ looked.  He looked around at everyone else and just figured, they've got it worse.", self.name, self.verb, self.curseWord, self.adjective, self.bodyPart];
+    // Appending 'ing' to verb user entered
+    NSString *verbING = [self.verb stringByAppendingString:@"-ing"];
+
+    //NSMutableAttributedString *boldVerb = [[NSMutableAttributedString alloc] initWithString:verbING attributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:15]}];
+
+    NSString *story = [NSString stringWithFormat:@"One day, %@ was %@ into Mobile Makers when he/she noticed how %@ %@ his %@ looked.  He looked around at everyone else and just figured, they've got it worse.", self.name, verbING, self.curseWord, self.adjective, self.bodyPart];
+
+    /*
+     // this is where we left off
+    NSMutableAttributedString *attributedStory = [[NSMutableAttributedString alloc] initWithString:story];
+
+
+    self.resultsTextView.attributedText = story;
+    */
 
     self.resultsTextView.text = story;
     // Do any additional setup after loading the view.
