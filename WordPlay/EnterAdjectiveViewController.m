@@ -32,12 +32,12 @@
 
 - (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([identifier isEqualToString:@"adjectiveSegue"]) {
-        if (self.adjectiveTextField.text != nil){
-            return YES;
+        if ([self.adjectiveTextField.text isEqualToString:@" "] || self.adjectiveTextField.text.length <= 0){
+            return NO;
         }
         else
         {
-            return NO;
+            return YES;
         }
     }
     return NO;

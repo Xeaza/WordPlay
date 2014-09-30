@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T0v-fp-Kmv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T0v-fp-Kmv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -298,10 +298,10 @@
                                 <exclude reference="gyq-AV-FEP"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Nhd-uw-Fdv"/>
-                                <exclude reference="xpE-Lf-C0F"/>
                                 <exclude reference="LfQ-OY-DFA"/>
                                 <exclude reference="uRO-Si-YyT"/>
+                                <exclude reference="Nhd-uw-Fdv"/>
+                                <exclude reference="xpE-Lf-C0F"/>
                                 <exclude reference="N8s-4o-Ls0"/>
                                 <exclude reference="W5A-fk-Lc1"/>
                             </mask>
@@ -313,10 +313,10 @@
                                 <include reference="gyq-AV-FEP"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Nhd-uw-Fdv"/>
-                                <include reference="xpE-Lf-C0F"/>
                                 <include reference="LfQ-OY-DFA"/>
                                 <include reference="uRO-Si-YyT"/>
+                                <include reference="Nhd-uw-Fdv"/>
+                                <include reference="xpE-Lf-C0F"/>
                                 <include reference="N8s-4o-Ls0"/>
                                 <include reference="W5A-fk-Lc1"/>
                             </mask>
@@ -406,12 +406,12 @@
                                 <exclude reference="4O4-NT-9fT"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Y5a-cS-SMd"/>
+                                <exclude reference="cfr-Tt-64U"/>
+                                <exclude reference="i2T-DJ-b7p"/>
                                 <exclude reference="8Mc-bE-lx1"/>
                                 <exclude reference="aBE-zS-e6J"/>
                                 <exclude reference="lWL-qt-Ubc"/>
-                                <exclude reference="cfr-Tt-64U"/>
-                                <exclude reference="i2T-DJ-b7p"/>
-                                <exclude reference="Y5a-cS-SMd"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -420,12 +420,12 @@
                                 <include reference="4O4-NT-9fT"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Y5a-cS-SMd"/>
+                                <exclude reference="cfr-Tt-64U"/>
+                                <include reference="i2T-DJ-b7p"/>
                                 <include reference="8Mc-bE-lx1"/>
                                 <include reference="aBE-zS-e6J"/>
                                 <include reference="lWL-qt-Ubc"/>
-                                <exclude reference="cfr-Tt-64U"/>
-                                <include reference="i2T-DJ-b7p"/>
-                                <include reference="Y5a-cS-SMd"/>
                             </mask>
                         </variation>
                     </view>

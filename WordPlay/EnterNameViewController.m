@@ -29,10 +29,9 @@
 
 #pragma mark - Navigation
 
-
 - (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([identifier isEqualToString:@"nameSegue"]) {
-        if ([self.nameTextField.text isEqualToString:@""]){
+        if ([self.nameTextField.text isEqualToString:@" "] || self.nameTextField.text.length <= 0){
             return NO;
         }
         else
@@ -42,6 +41,7 @@
     }
     return NO;
 }
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     EnterAdjectiveViewController *enterAdjectiveViewController = segue.destinationViewController;
