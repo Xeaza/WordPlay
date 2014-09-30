@@ -30,6 +30,19 @@
 
 #pragma mark - Navigation
 
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([identifier isEqualToString:@"adjectiveSegue"]) {
+        if (self.adjectiveTextField.text != nil){
+            return YES;
+        }
+        else
+        {
+            return NO;
+        }
+    }
+    return NO;
+}
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ResultsViewController *resultsViewController = segue.destinationViewController;
