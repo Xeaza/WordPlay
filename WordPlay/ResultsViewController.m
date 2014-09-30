@@ -18,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *story = [NSString stringWithFormat:@"One day, %@ was walking into Mobile Makers when he noticed how %@ his students were.", self.name, self.adjective];
+
+    self.resultsTextView.text = story;
     // Do any additional setup after loading the view.
 }
 
