@@ -10,4 +10,7 @@
 
 @interface EnterAdjectiveViewController : UIViewController
 @property NSString *name;
+@property NSString *verb;
+@property NSString *curseWord;
+@property NSString *bodyPart;
 @end

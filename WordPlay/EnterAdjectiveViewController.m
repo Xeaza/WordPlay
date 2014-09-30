@@ -48,6 +48,9 @@
     ResultsViewController *resultsViewController = segue.destinationViewController;
     resultsViewController.adjective = self.adjectiveTextField.text;
     resultsViewController.name = self.name;
+    resultsViewController.verb = self.verb;
+    resultsViewController.curseWord = self.curseWord;
+    resultsViewController.bodyPart = self.bodyPart;
 
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *story = [NSString stringWithFormat:@"One day, %@ was walking into Mobile Makers when he noticed how %@ his students were.", self.name, self.adjective];
+    NSString *story = [NSString stringWithFormat:@"One day, %@ was %@ into Mobile Makers when he noticed how %@ %@ his %@ looked.  He looked around at everyone else and just figured, they've got it worse.", self.name, self.verb, self.curseWord, self.adjective, self.bodyPart];
 
     self.resultsTextView.text = story;
     // Do any additional setup after loading the view.
