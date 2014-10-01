@@ -21,20 +21,32 @@
     // Appending 'ing' to verb user entered
     NSString *verbING = [self.verb stringByAppendingString:@"-ing"];
 
-    //NSMutableAttributedString *boldVerb = [[NSMutableAttributedString alloc] initWithString:verbING attributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:15]}];
+    // This is our Mad Lib story including user input
+    NSString *story = [NSString stringWithFormat:@"One day, %@ was %@ into Mobile Makers when he/she noticed how %@ %@ his %@ looked. He looked around at everyone else and just figured, they've got it worse.", self.name, verbING, self.curseWord, self.adjective, self.bodyPart];
 
-    NSString *story = [NSString stringWithFormat:@"One day, %@ was %@ into Mobile Makers when he/she noticed how %@ %@ his %@ looked.  He looked around at everyone else and just figured, they've got it worse.", self.name, verbING, self.curseWord, self.adjective, self.bodyPart];
+    // This is a regex string the holds the patterns, in this case words we would like to find
+    NSString *regexString = [NSString stringWithFormat:@"(%@|%@|%@|%@|%@)", self.name, verbING, self.curseWord, self.adjective, self.bodyPart];
 
-    /*
-     // this is where we left off
-    NSMutableAttributedString *attributedStory = [[NSMutableAttributedString alloc] initWithString:story];
+    // Convert our story which is an NSString into an NSMutableAttributedString
+    NSMutableAttributedString *mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:story];
 
+    // Create a NSRegularExpression using the regex string [read pattern] we created above
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexString options:kNilOptions error:nil];
 
-    self.resultsTextView.attributedText = story;
-    */
+    // The range we would like to look through is the length of the whole story
+    NSRange range = NSMakeRange(0,story.length);
 
-    self.resultsTextView.text = story;
-    // Do any additional setup after loading the view.
+    // enumerate through the story to find any matches that are in our regex pattern
+    [regex enumerateMatchesInString:story options:kNilOptions range:range usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+
+        NSRange subStringRange = [result rangeAtIndex:1];
+
+        UIFont *font = [UIFont fontWithName:@"Helvetica-Bold" size:13.0f];
+
+        [mutableAttributedString addAttribute:NSFontAttributeName value:font range:subStringRange];
+    }];
+
+    self.resultsTextView.attributedText = mutableAttributedString;
 }
 
 - (void)didReceiveMemoryWarning {
